@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #cd6114;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .box {
+      width: 300px;              /* Content width */
+      height: 150px;             /* Content height */
+      padding: 20px;             /* Space between content and border */
+      border: 5px solid #4CAF50; /* Border around the padding */
+      margin: 15px;              /* Space outside the border */
+      background-color: #e7f9e7; /* Background color of the content area */
+      box-sizing: border-box;    /* Includes padding and border in width/height */
+      position: relative;
+    }
+
+    .label {
+      position: absolute;
+      top: -30px;
+      left: 10px;
+      font-size: 14px;
+      background: #4CAF50;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="label">Box Model</div>
+      Content Area
+    </div>
+    <p>
+      This box demonstrates the CSS box model:
+      <ul>
+        <li><strong>Content:</strong> The inner part with the text "Content Area."</li>
+        <li><strong>Padding:</strong> Space between the content and the border (green area).</li>
+        <li><strong>Border:</strong> The green outline around the box.</li>
+        <li><strong>Margin:</strong> The space outside the border separating the box from other elements.</li>
+      </ul>
+    </p>
+  </div>
+</body>
+</html>
