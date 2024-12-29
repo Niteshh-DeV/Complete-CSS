@@ -1,0 +1,25 @@
+ /* Element Selector */
+ p {
+    color: blue;
+}
+
+/* ID Selector */
+#unique {
+    font-weight: bold;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    color: red;
+}
