@@ -1,0 +1,45 @@
+/* Attribute Selector: Styling links based on attributes */
+body
+{
+    font-family:'Times New Roman', Times, serif;
+    background-color: #635d5f;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+a[href^="https://"] {
+    color: blue; /* Links starting with https:// are blue */
+    text-decoration: none;
+  }
+  
+  a[href^="mailto:"] {
+    color: green; /* Email links are green */
+  }
+  
+  a[href="#section1"] {
+    color: orange; /* Links pointing to an ID are orange */
+  }
+  
+  /* Pseudo-classes: Styling input field when focused */
+  input:focus {
+    border: 2px solid royalblue;
+    outline: none;
+    background-color: #f0f8ff;
+  }
+  
+  /* Pseudo-elements: Adding content before and after */
+  button.styled-button::before {
+    content: "🔥 "; /* Adds fire emoji before the button text */
+  }
+  
+  button.styled-button::after {
+    content: " 🚀"; /* Adds rocket emoji after the button text */
+  }
+  
+  /* Adding hover effect to the button */
+  button.styled-button:hover {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
